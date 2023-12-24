@@ -2,7 +2,15 @@ http://tinyurl.com/debloat-ubuntu
 sudo bash Debloat.sh
 sudo apt-get purge transmission-cli transmission-common transmission-daemon cheese aisleriot
 sudo nano /etc/apt/sources.list
-deb http://mirror.yandex.ru/ubuntu/ jammy main 
-deb-src http://mirror.yandex.ru/ubuntu/ jammy main 
+deb http://mirror.yandex.ru/ubuntu bionic main restricted
+deb http://mirror.yandex.ru/ubuntu bionic-updates main restricted
+deb http://mirror.yandex.ru/ubuntu bionic universe
+deb http://mirror.yandex.ru/ubuntu bionic-updates universe
+deb http://mirror.yandex.ru/ubuntu bionic multiverse
+deb http://mirror.yandex.ru/ubuntu bionic-updates multiverse
+deb http://mirror.yandex.ru/ubuntu bionic-backports main restricted universe multiverse
+deb http://mirror.yandex.ru/ubuntu bionic-security main restricted
+deb http://mirror.yandex.ru/ubuntu bionic-security universe
+deb http://mirror.yandex.ru/ubuntu bionic-security multiverse
 sudo apt install gdebi
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
