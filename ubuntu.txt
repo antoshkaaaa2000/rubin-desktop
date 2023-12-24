@@ -5,3 +5,4 @@ sudo nano /etc/apt/sources.list
 deb http://mirror.yandex.ru/ubuntu/ jammy main 
 deb-src http://mirror.yandex.ru/ubuntu/ jammy main 
 sudo apt install gdebi
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
